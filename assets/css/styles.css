@@ -1,0 +1,129 @@
+:root {
+    --primaryNutmeg: hsl(14, 45%, 36%);
+    --primaryDarkRaspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--eggshell);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 736px;
+    gap: 20px;
+}
+article {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+img {
+    border-radius: 12px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+header, section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.preparation {
+    background-color: var(--roseWhite);
+    padding: 28px;
+    border-radius: 12px;
+}
+
+.macros-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.nutrition-row {
+    display: flex;
+    padding: 0 32px;
+    gap: 8px;
+}
+.nutrition-row span, .nutrition-row strong {
+    margin-right: auto;
+    flex-basis: 288px;
+}
+.nutrition-row strong {
+    color: var(--primaryNutmeg);
+}
+
+li {
+    color: var(--wengeBrown);
+    padding-left: 16px;
+}
+
+ul, ol {
+    padding-inline-start: 22px;
+    /*padding-inline-end: 7px;*/
+}
+ol li::marker {
+    font-weight: 700;
+    color: var(--primaryNutmeg);
+}
+hr {
+    border-top: 1px solid var(--lightGrey);
+}
+h1, h2 {
+    font-family: "Young Serif", serif;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 28px;
+    color: var(--primaryNutmeg);
+}
+h3 {
+    font-size: 20px;
+    line-height: 1;
+    color: var(--primaryDarkRaspberry);
+}
+
+@media (max-width: 435px) {
+    body {
+        background-color: var(--white);
+    }
+    article {
+        border-radius: 0px;
+        padding: 32px;
+    }
+    img {
+        border-radius: 0px;
+    }
+    .max-width-wrapper {
+        margin-top: -32px;
+        margin-left: -32px;
+        margin-right: -32px;
+    }
+}
