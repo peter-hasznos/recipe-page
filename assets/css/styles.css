@@ -25,7 +25,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 736px;
-    gap: 20px;
 }
 article {
     background-color: var(--white);
@@ -108,6 +107,11 @@ h3 {
     font-size: 20px;
     line-height: 1;
     color: var(--primaryDarkRaspberry);
+}
+
+.attribution {
+   padding-top: 20px;
+   padding-bottom: 20px;
 }
 
 @media (max-width: 435px) {
